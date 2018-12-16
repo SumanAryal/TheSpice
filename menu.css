@@ -1,0 +1,185 @@
+.logo {
+  display: block;
+  height: 200px;
+  width: 200px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: relative;
+  margin-bottom: -120px;
+  margin-top: -40px;
+  border-radius: 40%;
+}
+
+.topitem {
+  text-transform: uppercase;
+  font-family: "Neuton", serif;
+  border-radius: 32px;
+  background-color: rgba(255, 255, 255, 0.11);
+  margin: 5px;
+  color: white;
+  padding: 2px;
+  font-size: 15px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.mainnav {
+  /* background-image: url(mike1.jpg); */
+  border-radius: 50px;
+  margin-top: 10px;
+}
+
+.fa-list {
+  color: rgb(207, 207, 207);
+}
+
+body,
+html {
+  width: 100%;
+  background-image: url(mike2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  font-family: "Neuton", serif;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.jumbotron {
+  background-color: transparent;
+}
+
+/* TILL HERE NAV BAR AND LOGO *
+
+/* Reservation Form */
+
+.Dateform,
+.booknow {
+  width: 100%;
+  margin-bottom: 12px;
+  background: transparent;
+  color: white;
+}
+
+#textarea {
+  margin-top: -15px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-family: "Neuton", serif;
+}
+
+.modal-footer {
+  margin-bottom: -40px;
+}
+
+/* Reservation Form till here */
+
+.menus {
+  color: white;
+  text-align: center;
+  font-family: "Neuton", serif;
+}
+
+.menu-item {
+  text-transform: uppercase;
+  font-family: "Neuton", serif;
+  font-size: 15px;
+  color: white !important;
+  background-color: transparent;
+  border: none;
+}
+
+#menunav {
+  /* background-image: url(mike1.jpg); */
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+.menuitems {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.left {
+  width: 70%;
+}
+
+.targetDiv {
+  display: none;
+}
+
+#div1 {
+  display: block;
+}
+
+.mocktails li {
+  margin-top: 20px;
+  list-style: none;
+}
+
+.mocktails {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.row {
+  margin-bottom: 25px;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+.spice-special {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.spice-special li {
+  margin-top: 25px;
+  list-style: none;
+}
+
+/* Button Nav */
+
+.hours {
+  height: 200px;
+  width: 200px;
+}
+
+.bottom {
+  margin-top: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Neuton", serif;
+  color: white;
+  align-content: center;
+}
+
+.fa {
+  margin-right: 20px;
+}
+
+/* Till here button NAV */
+
+.lft {
+  margin-left: 25px;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-bottom: 0;
+  font-size: 12px;
+  color: white;
+}

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Homepage</title>
+    <link
+      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Neuton:700"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="fullbody">
+      <div class=" jumbotron"><img class="logo" src="logo1.png" alt="" /></div>
+      <div class="topnav">
+        <nav class="navbar sticky-top navbar-expand-lg  mainnav navbar-light ">
+          <button
+            class="navbar-toggler bts"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-list fa-2x"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-fill w-100 ">
+              <li class="nav-item">
+                <a class="nav-link  topitem " href="index.html">
+                  <i class="fas fa-home fa-2x"></i><br />
+                  Home
+                </a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link topitem" href="aboutus.html"
+                  ><i class="fas fa-user-friends fa-2x"></i><br />
+                  About Us
+                </a>
+              </li>
+
+              <li class="nav-item ">
+                <a class="nav-link topitem" href="menu.html"
+                  ><i class="fas fa-utensils fa-2x"></i><br />
+                  Menu
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link topitem " href="contactus.html"
+                  ><i class="fas fa-address-book fa-2x"></i><br />Contact
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a
+                  class="nav-link topitem "
+                  data-target="#exampleModalCenter"
+                  data-toggle="modal"
+                  ><i class="far fa-address-card fa-2x"></i><br />
+                  Reservation</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide container carousel-fade"
+        data-ride="carousel"
+        data-interval="6000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active nepal">
+            <img
+              class="d-block w-100 rounded-top animated bounceIn"
+              src="ktm.jpg"
+              style="height:520px"
+            />
+            <div class="carousel-caption ">
+              <div class="view animated fadeIn">
+                <h3>Welcome To</h3>
+                <br />
+                <h1 class="h1">
+                  The Spice Lounge <br />
+                  Restaurant & Bar
+                </h1>
+                <a href="aboutus.html" class="btn btn-dark"
+                  ><h6>About Us</h6></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item nepal">
+            <img
+              class="d-block w-100 animated bounceIn"
+              src="5.jpg"
+              style="height:520px"
+            />
+            <div class="carousel-caption ">
+              <div class="view animated fadeIn">
+                <h2>
+                  Musical Night Every Day: <br />
+                  Enjoy The Live Music
+                </h2>
+                <button
+                  data-target="#exampleModalCenter"
+                  data-toggle="modal"
+                  class="btn btn-dark"
+                >
+                  <h6>Book A Table</h6>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item nepal">
+            <img
+              class="d-block w-100 animated bounceIn"
+              src="bar.jpg"
+              style="height:520px"
+            />
+            <div class="carousel-caption">
+              <div class="view  animated fadeIn">
+                <h2>Delicious Cuisine And Beverage</h2>
+                <a href="menu.html" class="btn btn-dark"
+                  ><h6>Check The Menu</h6></a
+                >
+              </div>
+            </div>
+          </div>
+          <ol class="carousel-indicators image carousel-indicators-numbers">
+            <li
+              data-target="#carouselExampleIndicators"
+              class="image"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              class="image"
+              data-slide-to="1"
+            ></li>
+            <li
+              data-target="#carouselExampleIndicators"
+              class="image"
+              data-slide-to="2"
+            ></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="about container">
+        <h2>Welcome To The Spice Lounge</h2>
+        <br />
+        <hr />
+        <h4>
+          The Spice Lounge Offers Culinary Excellence And A Sensory Immersion Of
+          Delicious Food Imaginative Cocktails, And Friendly Services!!
+        </h4>
+      </div>
+
+      <div class="imggallery jumbotron">
+        <div class="row jumbotron">
+          <div class="column">
+            <img
+              src="spice4.jpg"
+              style="width:100%"
+              onclick="openModal();currentSlide(1)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="ktm1.jpg"
+              style="width:100%"
+              onclick="openModal();currentSlide(2)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="2.jpg"
+              style="width:100%"
+              onclick="openModal();currentSlide(3)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="3.jpg"
+              style="width:100%"
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="spice8.jpg"
+              style="width:100%"
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="spice9.jpg"
+              style="width:100%"
+              onclick="openModal();currentSlide(4)"
+              class="hover-shadow cursor"
+            />
+          </div>
+        </div>
+
+        <div id="myModal" class="modal1 bounceInLeft  ">
+          <span class="close cursor " onclick="closeModal() ">&times;</span>
+          <div class="modal-content1 contentimg">
+            <div class="mySlides animated bounceInLeft ">
+              <img src="spice4.jpg " style="width:100% " />
+            </div>
+
+            <div class="mySlides animated bounceInLeft  ">
+              <img src="ktm1.jpg " style="width:100% " />
+            </div>
+
+            <div class="mySlides animated bounceInLeft  ">
+              <img src="2.jpg " style="width:100% " />
+            </div>
+
+            <div class="mySlides animated bounceInLeft  ">
+              <img src="3.jpg " style="width:100% " />
+            </div>
+            <div class="mySlides animated bounceInLeft  ">
+              <img src="spice8.jpg " style="width:100% " />
+            </div>
+
+            <div class="mySlides animated bounceInLeft  ">
+              <img src="spice9.jpg " style="width:100% " />
+            </div>
+
+            <a class="prev  " onclick="plusSlides(-1) ">&#10094;</a>
+            <a class="next   " onclick="plusSlides(1) ">&#10095;</a>
+
+            <div class="row demoimg jumbotron">
+              <div class="column ">
+                <img
+                  class="demo cursor "
+                  src="spice4.jpg "
+                  style="width:100% "
+                  onclick="currentSlide(1) "
+                />
+              </div>
+              <div class="column ">
+                <img
+                  class="demo cursor "
+                  src="ktm1.jpg "
+                  style="width:100% "
+                  onclick="currentSlide(2) "
+                />
+              </div>
+              <div class="column ">
+                <img
+                  class="demo cursor "
+                  src="2.jpg "
+                  style="width:100% "
+                  onclick="currentSlide(3) "
+                />
+              </div>
+              <div class="column ">
+                <img
+                  class="demo cursor "
+                  src="3.jpg "
+                  style="width:100% "
+                  onclick="currentSlide(4) "
+                />
+              </div>
+              <div class="column ">
+                <img
+                  class="demo cursor "
+                  src="spice8.jpg "
+                  style="width:100% "
+                  onclick="currentSlide(5) "
+                />
+              </div>
+              <div class="column ">
+                <img
+                  class="demo cursor "
+                  src="spice9.jpg "
+                  style="width:100% "
+                  onclick="currentSlide(6) "
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+        <div class="jumbotron ">
+              <h2><a class="badge btn-info " href="destination.html ">Featuring Bands</a></h2>
+              <div id="carouselExampleIndicators1 " class="carousel slide " data-ride="carousel " data-interval="4000 ">
+
+                    <div class="carousel-inner " role="listbox ">
+                          <div class="carousel-item active ">
+                                <div class="row ">
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band1.jpg ">
+                                      </div>
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band2.jpg ">
+                                      </div>
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band 3.jpg ">
+                                      </div>
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band4.jpg ">
+                                      </div>
+
+                                </div>
+                          </div>
+
+                          <div class="carousel-item ">
+                                <div class="row ">
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band5.jpg ">
+                                      </div>
+
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band6.jpg ">
+                                      </div>
+
+                                      <div class="col-lg-3 col-sm-6 ">
+                                            <img class="card-img-top destination animated rollIn " src="band7.jpg ">
+                                      </div>
+
+                                      <div class="col-lg-3 col-sm-6 ">
+
+                                            <img class="card-img-top destination animated rollIn " src="band8.jpg ">
+
+                                      </div>
+                                </div>
+                          </div>
+                    </div>
+              </div>
+              <ol class="carousel-indicators band carousel-indicators-numbers ">
+                    <li data-target="#carouselExampleIndicators1 " class="band " data-slide-to="0 " class="active "></li>
+                    <li data-target="#carouselExampleIndicators1 " class="band " data-slide-to="1 "></li>
+              </ol>
+        </div>
+      -->
+      <!--
+        <div class="chat ">
+              <a href="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThe-Spice-Lounge-2082865495187734%2F&tabs=messages&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId "
+                    width="340 " height="500 " frameborder="0 " allowTransparency="true " allow="encrypted-media "> <i
+                          class="fab fa-facebook-messenger fa-3x "></i></a>
+        </div>
+      -->
+
+      <nav class="navbar navbar-expand-m nav-fill w-100 bottom ">
+        <a class="nav-item ">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.992961065271!2d83.46013411473285!3d27.686612433010467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996867d0fbf1b01%3A0x7d89efe14cabfd7f!2sSpice+Lounge+Restaurant+and+Bar!5e0!3m2!1sen!2sfi!4v1536521767567 "
+            width="250 "
+            height="170 "
+            frameborder="0 "
+            style="border:0 "
+            allowfullscreen
+          ></iframe>
+        </a>
+
+        <a class="nav-item ml-auto ">
+          <h3>Keep In Touch</h3>
+          <li>
+            <i class="fas fa-map-marker-alt fa "></i> Tinkune, Butwal 32907,
+            Nepal
+          </li>
+          <li>
+            <i class="fas fa-phone-volume fa "></i> +9779867233673,
+            +9779857039060
+          </li>
+          <li><i class="fas fa-envelope fa "></i>spicehospitality@gmail.com</li>
+
+          <div class="fblike ">
+            <iframe
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThe-Spice-Lounge-2082865495187734%2F&tabs&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId "
+              width="280 "
+              height="130 "
+              style="border:none;overflow:hidden "
+              scrolling="no
+                        "
+              frameborder="0 "
+              allowTransparency="true "
+              allow="encrypted-media "
+            ></iframe>
+          </div>
+
+          <!--
+            <li> Follow Us <i class="fab fa-facebook-square fa-2x "></i>
+            <i class="fab fa-instagram fa-2x "></i> </li>
+          -->
+        </a>
+        <a class="nav-item ml-auto ">
+          <img class="hours animated swing " src="hour.png " alt=" " />
+        </a>
+      </nav>
+    </div>
+    <p class="copyright">
+      Copyright © The Spice Lounge Restaurant & Bar<br />
+      All Right Reserved | Made By Suman Aryal
+    </p>
+    <!-- Modal -->
+    <div
+      aria-hidden="true"
+      aria-labelledby="exampleModalCenterTitle"
+      class="modal  animated flipInY"
+      id="exampleModalCenter"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body card">
+            <form
+              action="untitled.php"
+              class="form-group"
+              id="contact-form"
+              method="post"
+              name="contact-form"
+            >
+              <label class="form-text" for="Name" id="name">Full Name*</label>
+              <input
+                class="booknow"
+                id="Name"
+                name="Name"
+                placeholder="First Name"
+                required=""
+                type="text"
+              /><br />
+              <label class="form-text" for="Email" id="email-form"
+                >Email Address*</label
+              >
+              <input
+                class="booknow"
+                id="Email"
+                name="Email"
+                placeholder="Email"
+                required=""
+                type="email"
+              /><br />
+              <label class="form-text" for="Contact">Contact Number</label>
+              <input
+                class="booknow"
+                id="Contact"
+                name="Contact"
+                placeholder="Contact Number"
+                type="number"
+              /><br />
+
+              <label class="form-text" for="Departure" id="ddate"> Date</label>
+              <input
+                class="Dateform"
+                id="Departure"
+                name="Ddate"
+                placeholder="DD/MM/YYYY"
+                type="date"
+              /><br />
+
+              <label class="form-text" for="Traveller" id="Traveller"
+                >Total Guests</label
+              >
+              <input
+                class="booknow"
+                id="Return"
+                name="Traveller"
+                placeholder="Number of Guests"
+                type="number"
+              /><br />
+              <label class="form-text" for="Paragraph"
+                >Any Special Request?</label
+              ><br />
+              <textarea
+                class="booknow"
+                cols="15"
+                id="textarea"
+                name="message"
+                required=""
+                rows="5"
+              ></textarea
+              ><br />
+              <div class="modal-footer">
+                <button class="btn btn-primary" name="submit" type="submit">
+                  Submit
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      crossorigin="anonymous "
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN
+                        "
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js "
+    ></script>
+    <script src="index.js "></script>
+    <script src="date.js"></script>
+    <script
+      crossorigin="anonymous "
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
+                        "
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "
+    ></script>
+    <script
+      crossorigin="anonymous "
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl
+                        "
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "
+    ></script>
+  </body>
+</html>

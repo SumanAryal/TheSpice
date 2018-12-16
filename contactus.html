@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>ContactUS</title>
+    <link
+      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      rel="stylesheet"
+    />
+    <link href="contactus.css" rel="stylesheet" />
+    <link rel="stylesheet" href="animate.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Neuton:700"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class=" jumbotron"><img class="logo " src="logo1.png" alt="" /></div>
+    <div class="topnav">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light mainnav  ">
+        <!--
+          <a class="navbar-brand"
+          href="homepage1.html"><img class="logo"
+          src="spice%20logo.jpg"></a>
+        -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-list fa-2x"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-fill w-100 ">
+            <li class="nav-item">
+              <a class="nav-link  topitem " href="index.html">
+                <i class="fas fa-home fa-2x"></i><br />
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link topitem " href="aboutus.html"
+                ><i class="fas fa-user-friends fa-2x"></i><br />
+                About Us
+              </a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link topitem " href="menu.html"
+                ><i class="fas fa-utensils fa-2x"></i><br />
+                Menu
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link topitem " href="contactus.html"
+                ><i class="fas fa-address-book fa-2x"></i><br />Contact
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a
+                class="nav-link topitem "
+                data-target="#exampleModalCenter"
+                data-toggle="modal"
+                ><i class="far fa-address-card fa-2x"></i><br />
+                Reservation</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="maptext">
+      <h2 class="find">REACH US</h2>
+      <hr class="findus" />
+      <br />
+      <p class="container">
+        Please use the contact form below if you have any inquiries or requests,
+        concerning our services. We are happy to answer any questions you have.
+        We will respond to your message as quickily as possible.<br />
+        Below you can also find a road map to our Restaurant
+      </p>
+    </div>
+    <div class="box container">
+      <form
+        class="form-group"
+        id="contact-form"
+        method="POST"
+        action="contactspice.php"
+      >
+        <div class="row">
+          <div class="col">
+            <input
+              class="input"
+              id="Name"
+              type="text"
+              name="Firstname"
+              placeholder="First Name"
+              required=""
+            />
+          </div>
+
+          <div class="col">
+            <input
+              class="input"
+              id="Name"
+              type="text"
+              name="Lastname"
+              placeholder="Last Name"
+              required=""
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              class="input"
+              id="Email"
+              type="Email"
+              name="Email"
+              placeholder="Email"
+              required
+            />
+          </div>
+
+          <div class="col">
+            <input
+              class="input"
+              id="Contact"
+              type="text"
+              name="Contact"
+              placeholder="Contact Number"
+            />
+          </div>
+        </div>
+
+        <textarea
+          class="textarea"
+          id="Pargraph"
+          rows="7"
+          cols="15"
+          required=""
+          name="Message"
+          placeholder="Your Message"
+        ></textarea
+        ><br />
+        <button type="submit" name="submit1" class="btn btn-info">
+          Submit
+        </button>
+      </form>
+    </div>
+    <nav class="navbar-dark bg-darks">
+      <h2 class="contactnav ">GET IN TOUCH</h2>
+      <br />
+      <div class="icons">
+        <a
+          href="https://www.facebook.com/The-Spice-Lounge-2082865495187734/?fb_dtsg_ag=AdxOntFCGxmI-eOewoosBjGeI4xyeo2DgkqGxl-6h2ppfQ%3AAdy1C4hUST8csgrhTpCWcQjCKSEbfzb0vEvl5dyyFckLUg"
+        >
+          <i class="fab fa-facebook-square fa-3x"></i
+        ></a>
+
+        <i class="fab fa-instagram fa-3x"></i>
+      </div>
+      <div class="nav nav-fill">
+        <li class="nav-item ">
+          <a
+            ><i class="fas fa-map-marker fa-3x"></i> <br />
+            <h3>Visit Us</h3>
+            <br />
+            <h4>
+              Tinkune, Butwal <br />
+              Nepal
+            </h4></a
+          >
+        </li>
+        <li class="nav-item ">
+          <a
+            ><i class="fas fa-mobile-alt fa-3x"></i> <br />
+            <h3>Call Us</h3>
+            <br />
+            <h5>
+              +9779867233673<br />
+              +9779857039060
+            </h5></a
+          >
+        </li>
+        <li class="nav-item ">
+          <a
+            ><i class="fas fa-envelope-open fa-3x"></i>
+
+            <br />
+            <h3>Email Us</h3>
+
+            <br />
+            <h6>spicehospitality@gmail.com</h6></a
+          >
+        </li>
+      </div>
+    </nav>
+
+    <div class="maptext">
+      <h2 class="find">FIND US</h2>
+
+      <hr class="findus" />
+      <br />
+    </div>
+    <div class="container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56527.89210670123!2d83.4273032311742!3d27.686603296777484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996867d0fbf1b01%3A0x7d89efe14cabfd7f!2sSpice+Lounge+Restaurant+and+Bar!5e0!3m2!1sen!2sfi!4v1536586447339"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <nav class="navbar navbar-expand-m nav-fill w-100 bottom ">
+      <a class="nav-item ">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.992961065271!2d83.46013411473285!3d27.686612433010467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996867d0fbf1b01%3A0x7d89efe14cabfd7f!2sSpice+Lounge+Restaurant+and+Bar!5e0!3m2!1sen!2sfi!4v1536521767567 "
+          width="250 "
+          height="170 "
+          frameborder="0 "
+          style="border:0 "
+          allowfullscreen
+        ></iframe>
+      </a>
+
+      <a class="nav-item ml-auto ">
+        <h3>Keep In Touch</h3>
+        <li>
+          <i class="fas fa-map-marker-alt fa "></i> Tinkune, Butwal 32907, Nepal
+        </li>
+        <li>
+          <i class="fas fa-phone-volume fa "></i> +9779867233673, +9779857039060
+        </li>
+        <li><i class="fas fa-envelope fa "></i>spicehospitality@gmail.com</li>
+
+        <div class="fblike ">
+          <iframe
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FThe-Spice-Lounge-2082865495187734%2F&tabs&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId "
+            width="280 "
+            height="130 "
+            style="border:none;overflow:hidden "
+            scrolling="no
+                          "
+            frameborder="0 "
+            allowTransparency="true "
+            allow="encrypted-media "
+          ></iframe>
+        </div>
+
+        <!--
+          <li> Follow Us <i class="fab fa-facebook-square fa-2x "></i>
+               <i class="fab fa-instagram fa-2x "></i> </li>
+        -->
+      </a>
+      <a class="nav-item ml-auto ">
+        <img class="hours animated swing " src="hour.png " alt=" " />
+      </a>
+    </nav>
+
+    <p class="copyright">
+      Copyright © The Spice Lounge Restaurant & Bar<br />
+      All Right Reserved | Made By Suman Aryal
+    </p>
+    <!-- Modal -->
+    <div
+      aria-hidden="true"
+      aria-labelledby="exampleModalCenterTitle"
+      class="modal  animated flipInY"
+      id="exampleModalCenter"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body card">
+            <form
+              action="untitled.php"
+              class="form-group"
+              id="contact-form"
+              method="post"
+              name="contact-form"
+            >
+              <label class="form-text" for="Name" id="name">Full Name*</label>
+              <input
+                class="booknow"
+                id="Name"
+                name="Name"
+                placeholder="First Name"
+                required=""
+                type="text"
+              /><br />
+              <label class="form-text" for="Email" id="email-form"
+                >Email Address*</label
+              >
+              <input
+                class="booknow"
+                id="Email"
+                name="Email"
+                placeholder="Email"
+                required=""
+                type="email"
+              /><br />
+              <label class="form-text" for="Contact">Contact Number</label>
+              <input
+                class="booknow"
+                id="Contact"
+                name="Contact"
+                placeholder="Contact Number"
+                type="number"
+              /><br />
+
+              <label class="form-text" for="Departure" id="ddate"> Date</label>
+              <input
+                class="Dateform"
+                id="Departure"
+                name="Ddate"
+                placeholder="DD/MM/YYYY"
+                type="date"
+              /><br />
+
+              <label class="form-text" for="Traveller" id="Traveller"
+                >Total Guests</label
+              >
+              <input
+                class="booknow"
+                id="Return"
+                name="Traveller"
+                placeholder="Number of Guests"
+                type="number"
+              /><br />
+              <label class="form-text" for="Paragraph"
+                >Any Special Request?</label
+              ><br />
+              <textarea
+                class="booknow"
+                cols="15"
+                id="textarea"
+                name="message"
+                required=""
+                rows="5"
+              ></textarea
+              ><br />
+              <div class="modal-footer">
+                <button class="btn btn-primary" name="submit" type="submit">
+                  Submit
+                </button>
+                <button class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    ></script>
+    <script src="date.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    ></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>
